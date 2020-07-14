@@ -1,0 +1,292 @@
+@import "variables";
+
+* {
+	margin:0; 
+	padding: 0; 
+	list-style: none; 
+	text-decoration: none; 
+	box-sizing: border-box;
+}
+
+
+.barra { 
+	background-color: $bgbarra;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+}
+
+.logo {
+	margin: 5px;
+	}
+
+.secciones ul li { 
+ 		font-family: 'Nunito', sans-serif;
+		margin: 20px;
+		float: right;
+  }
+/*------- termina barra navegacion p/todas las secciones----*/
+
+
+.banner {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px; 
+}
+ 
+.banner img {
+	width: 90vw;
+}
+
+/*------- termina baner p/todas las secciones----*/
+
+/*------- subtitulo p/todas las secciones----*/
+
+.subtitulo {
+	font-family: $texto;
+	font-size: 30px;
+	text-align: center;
+	background-color: $color2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 20px 10px;
+}
+
+
+/*------- termina subtitulo----*/
+
+/*------- index ----*/
+h1 {
+	display: flex;
+	justify-content: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 60px;
+
+}
+
+.medio{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+#quees {
+	font-family: 'Nunito', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	background-color: $bg2;
+	margin-top: 10px;
+}
+
+
+
+ .texto {
+	font-family: 'Nunito', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.queestexto {
+	
+	width: 50%;
+	padding: 20px
+	
+}
+.queesimagen{
+	
+	
+	height: 500px;
+	
+}
+/*------- termina index----*/
+
+/*------- diseños, ilustradores y galeria ----*/
+.imagenes div img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+
+}
+
+.imagenes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill , minmax(360px, 1fr)); 
+	grid-gap: 15px;
+	grid-auto-rows: 360px;
+	justify-content: center;
+	padding: 50px;
+	
+}
+
+/*------- terminadiseños, ilustradores y galeria----*/
+
+/*------contactame-----*/
+.contactame {
+	padding: 100px 40px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: $color2;
+	justify-content: space-around;
+	
+}
+
+.formulario {
+	min-width: 400px;
+	flex: 1;
+	text-align: center;
+	padding: 20px;
+	
+	
+}
+.etiqueta {
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0;
+	background-color: $color2;
+	border: none;
+	border-bottom: 2px solid #BAF2D8;
+	
+}
+.textarea {
+	width: 100%;
+	padding: 7px;
+	margin: 10px 0;
+	min-height: 200px;
+	background-color: $color2;
+	border: none;
+	border-bottom: 2px solid #BAF2D8;
+	
+
+}
+.etiqueta:focus {
+	background-color: $bg1;
+	outline: none;
+	font-family: $texto;
+	font-size: 20px;
+}
+
+.textarea:focus {
+	background-color: $bg1;
+	outline: none;
+	resize: none;
+	font-family: $texto;
+	font-size: 20px;
+}
+
+.formImg {
+	display: flex;
+
+	padding: 10px;
+	flex: 1;
+
+
+}
+
+.formImg img { 
+	width: 60%;
+	margin: auto;
+	border: 2px solid $bg2;
+	
+	
+
+ } 
+ .formulario input[type="submit"] {
+ 	background-color: $bg2;
+ }
+
+
+ 
+
+/*------termina contactame-----*/
+
+
+/*------- footer p/todas las secciones----*/
+
+.footer {
+	background-color: $color2;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	
+}
+
+
+
+.legal {
+	padding: 5px 10px;
+	margin: 5px;
+	display: flex;
+}
+
+.pequeño {
+	font-family: $texto;
+	font-size: 12px;
+	margin: 5px;
+	display: flex;
+}
+
+.redes {
+	padding: 5px 10px;
+	margin: 5px;
+	display: flex;
+	
+
+
+}
+/*------- termina footer p/todas las secciones----*/
+.trans { 
+position: relative; 
+z-index: 5; 
+
+}
+
+.trans img {
+	position: absolute;
+	-webkti-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+	
+}
+.trans img.remera:hover {
+	opacity: 0;
+
+
+}
+
+
+/*
+.diseño {
+	position: absolute;
+}
+
+.remera {
+	position: absolute;
+}*/
+
+.imagenLink:hover {filter: blur(5px);}
+
+
+/*----boton flotante whatsapp------*/
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
